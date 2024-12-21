@@ -6,6 +6,8 @@ on:
   push:
     branches:
     - main
+    paths:
+      - 'Integration-elt/polygon-websocket/**'
 
 env:
   # Set this to your AWS region, e.g. us-east-1
