@@ -1,0 +1,30 @@
+name: linter
+on:
+  workflow_dispatch: {}
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'Integration-elt/**'  # Only trigger linting for changes in the Integration-elt folder
+
+jobs:
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v4
+        with:
+          set-safe-directory: true
+      
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+      
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r $GITHUB_WORKSPACE/.github/requirements.txt
+      
+      - name: Run linting checks using custom linter script
+        run: |
+          bash .github/bin/linter.sh  # Correctly references the custom linter script

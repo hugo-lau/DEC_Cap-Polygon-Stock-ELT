@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: polygon
+    database: polygon
+    schema: raw
+    tables:
+      - name: daily_open_close
+      - name: exchanges
+      - name: grouped_daily
+      - name: stock_split
+      - name: tickers
+      - name: ticker_types

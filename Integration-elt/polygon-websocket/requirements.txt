@@ -3,4 +3,4 @@ json_lines==0.5.0
 confluent-kafka
 python-dotenv
 pandas
-#pip install -U polygon-api-client
+polygon-api-client
