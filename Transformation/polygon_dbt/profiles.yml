@@ -1,0 +1,18 @@
+polygon:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: ekvtysm-ndb90369
+
+      # User/password auth
+      user: '{{ env_var("SNOWFLAKE_USERNAME") }}'
+      password: '{{ env_var("SNOWFLAKE_PASSWORD") }}'
+
+      role: accountadmin
+      database: polygon
+      warehouse: compute_wh
+      schema: raw
+      threads: 12
+      client_session_keep_alive: False
+
