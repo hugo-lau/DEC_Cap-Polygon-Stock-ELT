@@ -11,7 +11,8 @@ In preset, three charts were created directly off the clickhouse data. One was a
 ![Image](/Docs/Preset_Live_Dashboard.jpg)
 
 # Snowflake Historical Data
-In preset, a few charts were created off the snowflake mart data.
+In preset, a few charts were created off the snowflake mart data. These help in visualizing the stock trend over a particular period of time
+
 
 **Charts and Dashboards**
 Charts and dashboard screenshots to be included

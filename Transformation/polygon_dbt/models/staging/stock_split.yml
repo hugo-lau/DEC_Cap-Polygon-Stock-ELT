@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: Stock_Split
+    description: The split to and from value of a stock
+    columns:
+      - name: symbol
+        description: Ticker name
+      - name: split_to
+        description: The stock split to value
+      - name: split_from
+        description: Stock split from value
+      - name: execution_date
+        description: The split is executed on the date

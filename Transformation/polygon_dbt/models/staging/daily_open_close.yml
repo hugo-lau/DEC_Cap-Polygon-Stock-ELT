@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: daily_open_close
+    description: Staging table for daily data of stock tickes
+    columns:
+      - name: symbol
+        description: Business key to identify the ticker
+        tests:
+          - not_null
+      - name: date
+        description: Date the event occured
+        tests:
+          - not_null
+      - name: open
+        description: The opening cost of the stock
+        tests:
+          - not_null
+      - name: close
+        description: The closing amount of stock
+        tests:
+          - not_null
+      - name: high
+        description: the highest amount through out the day
+        tests:
+          - not_null
+      - name: low
+        description: Lowest amount throughout the date
+        tests:
+          - not_null
+      - name: volume
+        description: Volume of the stock
+        tests:
+          - not_null
+      - name: premarket
+        description: Value of the stock before the trading time starts
+        tests:
+          - not_null
+      - name: afterhours
+        description: Stock value after the trading window closes

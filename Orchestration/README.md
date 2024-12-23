@@ -18,3 +18,4 @@ In this pipeline, Dagster Cloud utilizes a declarative approach for asset materi
 ![Image](/Docs/Polygon_Websocket_Called.jpg)	
 
 # Screenshots of Dagster Orchestration of Batch-Processing Pipeline
+![Image](/Docs/orchestration_dbt_lineage.png)
