@@ -15,4 +15,6 @@ In preset, a few charts were created off the snowflake mart data. These help in 
 
 
 **Charts and Dashboards**
-Charts and dashboard screenshots to be included
+
+![Image](/Docs/preset_Polygon_batch_Stock.png)
+![Image](/Docs/Preset_Batch_Process_Chart.png)
