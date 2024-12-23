@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: Ticker_types
+    description: Types of tickers in the market
+    columns:
+      - name: code
+        description: Ticker name
+      - name: locale
+        description: The location of the stock
+      - name: asset_class
+        description: The market which the stock belongs to
+      - name: description
+        description: description of the stock

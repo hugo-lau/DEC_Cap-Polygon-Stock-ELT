@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: grouped_daily
+    description: The value of the stocks daily
+    columns:
+      - name: T
+        description: Ticker name
+        tests:
+          - not_null
+      - name: N
+        description: Number of transactions
+      - name: date
+        description: Date of the stock on which it is grouped
+        tests:
+          - not_null
+      - name: VW
+        description: Weighted volume average of the stock

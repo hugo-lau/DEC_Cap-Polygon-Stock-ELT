@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: Tickers
+    description: Tickers selected
+    columns:
+      - name: name
+        description: Ticker name
+      - name: type
+        description: Type of the ticker
+      - name: locale
+        description: Location of the ticker
+      - name: market
+        description: Market it belongs to
+      - name: ticker
+        description: Symbol of the ticker
+      - name: currency_name
+        description: USD or the currency name
+      - name: last_updated_utc
+        description: Last the ticker is updated
+      - name: primary_exchange
+        description: Which exchange trades with the ticker           
+

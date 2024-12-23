@@ -35,7 +35,7 @@ WINDOW w AS (
 ```
 
 # Batch Pipeline
-With the rest API endpoints available under the current subscription, we took 6 tables (‘daily_open_close’, ‘exchanges’, ‘grouped_daily’, ‘stock_split’, ‘ticker_types’, ‘tickers’) and transformed it into (‘dim_exchanges’, ‘dim_ticker_split’, ‘fact_tickers’, ‘report_tickers’) using dbt to take it through staging and marts.
+With the rest API endpoints available under the current subscription, we took 6 tables (‘daily_open_close’, ‘exchanges’, ‘grouped_daily’, ‘stock_split’, ‘ticker_types’, ‘tickers’) and transformed it into (‘dim_exchange’,'dim_ticker', dim_stock_split, fact_daily_trading, ‘reporting’) using dbt to take it through staging and marts.
 ‘dim_ticker_split’ was an inner_join between ‘stock_split’ and ‘ticker_types’ while ‘dim_ticker_exchange’ was an inner join of ‘tickers’ and ‘exchanges’, while report tickers is consolidation of all the available data fields.
 
 # Screenshots of Transforming Stream Pipeline
@@ -43,3 +43,6 @@ With the rest API endpoints available under the current subscription, we took 6 
 ![Image](/Docs/ConfluentCloud_KSQLDB_Persistent_Query.jpg)
 
 # Screenshots of Transforming Batch Pipeline 
+
+![Image](/Docs/snowflake.png)
+![Image](/Docs/dbt_Transformation.png)

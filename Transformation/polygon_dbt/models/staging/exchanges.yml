@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: exchanges
+    description: Staging table for dim_exchanges
+    columns:
+      - name: id
+        description: id of the exchange
+        tests:
+          - not_null
+      - name: mic
+        description: Mic of the exchnage
+      - name: url
+        description: URL of the exchange
+      - name: type
+        description: Type of the stock
+        tests:
+          - not_null
+      - name: locale
+        description: Location of the stock
+        tests:
+          - not_null
+      - name: acronym
+        description: Shortform of the stock
+      - name: asset_class
+        description: Market the stock belongs to
+        tests:
+          - not_null
+      - name: operating_mic
+        description: Operating mic of the stock
+      - name: participant_id
+        description: Participant id of the stock
