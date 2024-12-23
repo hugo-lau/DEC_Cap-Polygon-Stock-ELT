@@ -39,6 +39,13 @@ GitHub Actions is used to trigger the CI/CD pipeline, for which the status and l
 - Deploy_WebsocketContainer workflow is triggered automatically when changes are pushed to the `main` branch in the `Integration-elt/polygon-websocket/**` directory. This workflow builds a Docker container for the Polygon WebSocket client and pushes it to Amazon ECR. The workflow uses GitHub's OpenID Connect (OIDC) token, eliminating the need for AWS credentials
 - Serverless Branch Deployments workflow automates deployment to Dagster Cloud when changes are made to the `Orchestration/**` directory via a pull request. The workflow has two jobs: deploying a Docker container or a Python executable, depending on the conditions. It builds and deploys the deployment process to Dagster Cloud.
 
+**Lint Check Passed**
+![image](/Docs/CI-CD_Lintcheck_passed.jpg)
+**Docker built for Python Produce Code and Pushed to AWS ECR**
+![image](/Docs/CI-CD_CodedeployedtoECR.jpg)
+**List of GitHub Action Workflows**
+![image](/Docs/CI-CD_Github-Action-workflows.jpg)
+
 ## Comments, Notes and Future Improvements
 - Further analysis such as Candlestick Charts: Add additional analytics such as candlestick charts (OHLC) which would require customization as they are not natively supported in Apache Preset. 
 - Cost Consideration: To balance scalability and cost, the solution is scaled down to run for only a few minutes and subscribe to a select set of stocks. In production, it could scale to capture full market data over the entire 8-hour trading day
