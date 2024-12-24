@@ -34,4 +34,10 @@ Initially, we planned to deploy Airbyte on an EC2 instance. Although Airbyte was
 ![Image](/Docs/EC2_Airbyte_Grouped_Daily.jpg)
 **Airbyte Custom Stream of Tickers Endpoint**
 ![Image](/Docs/EC2_Airbyte_Tickers.jpg)
+**Airbyte Connection**
+![Image](/Docs/(Airbyte_Connection.png)
+**Airbyte Ingestion Schema**
+![Image](/Docs/(Airbyte_Ingestion_Schema.png)
+**Logs of Airbyte Sync**
+![Image](/Docs/( Airbyte_Timeline.png)
 
