@@ -3,16 +3,16 @@ polygon:
   outputs:
     dev:
       type: snowflake
-      account: ekvtysm-ndb90369
+      account: '{{env_var("SNOWFLAKE_ACCOUNT")}}'
 
       # User/password auth
       user: '{{ env_var("SNOWFLAKE_USERNAME") }}'
       password: '{{ env_var("SNOWFLAKE_PASSWORD") }}'
 
-      role: accountadmin
-      database: polygon
-      warehouse: compute_wh
-      schema: raw
+      role: '{{env_var(SNOWFLAKE_ROLE)}}'
+      database: '{{ env_var("SNOWFLAKE_DATABASE") }}'
+      warehouse: '{{ env_var("SNOWFLAKE_WAREHOUSE") }}'
+      schema: '{{ env_var("SNOWFLAKE_SCHEMA") }}'
       threads: 12
       client_session_keep_alive: False
 
